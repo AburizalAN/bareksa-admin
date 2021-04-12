@@ -1,0 +1,34 @@
+.chart-wrapper {
+    padding: 32px;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    h4 {
+        font-weight: 700;
+    }
+    .chart {
+        flex: 1;
+    }
+    
+    .more {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 32px; height: 32px;
+        border: 1px solid rgb(190, 190, 190);
+        border-radius: 3px;
+    }
+
+    .calendar {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 32px;
+        padding: 7px;
+        border: 1px solid rgb(190, 190, 190);
+        border-radius: 3px;
+        font-size: 14px;
+    }
+    
+}

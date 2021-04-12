@@ -1,0 +1,50 @@
+.chart-wrapper.table-wrapper {
+    height: 700px;
+    @media screen and (min-width: 992px) {
+        height: 425px;
+    }
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+    font-size: 14px;
+    .table-wrapper-2 {
+        @media screen and (max-width: 768px) {
+            overflow-x: scroll;
+        }
+    }
+    .table {
+        @media screen and (max-width: 768px) {
+            width: 862px;
+        }
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        height: 100%;
+        tbody {
+            flex: 1;
+            overflow-y: scroll;
+        }
+        th {
+            vertical-align: middle;
+        }
+        th, td {
+            padding: 1rem;
+        }
+        .status {
+            padding: 2px;
+            width: 100px;
+            text-align: center;
+            color: white;
+            border-radius: 5px;
+            &.pending {
+                background-color: #bd9166;
+            }
+            &.completed {
+                background-color: #789764;
+            }
+            &.canceled {
+                background-color: #D66D4B;
+            }
+        }
+    }
+}
